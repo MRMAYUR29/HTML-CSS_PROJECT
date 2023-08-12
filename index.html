@@ -293,7 +293,7 @@
         </div>
     </div>
 
-    <div class="swiper-container swiper-product">
+    <div class="swiper-container swiper-container-ct-cor">
         <div class="swiper-wrapper">
             <div class="swiper-slide filter1">
                 <div class="main-div">
@@ -493,6 +493,39 @@
                 </div>
 
             </div>
+            <div class="swiper-slide filter2">
+
+                <div class="main-div">
+                    <div>
+                        <img src="./img/image 265.png" class="imgcource" alt="">
+                    </div>
+                    <div class="mb-4 mobi-bot">
+                        <h5 class="crash-text">Crash Course 2024 Batch 2</h5>
+                        <span class="price">₹5200</span> <strike class="str-price">₹5600</strike>
+                    </div>
+                    <div>
+                        <ul class="d-flex flex-column pad-l-0">
+                            <li class="d-flex flex-row border-top border-bottom py-3">
+                                <img src="./img/Group 36358.png" alt="" class="image-size">
+                                <h5 class="mt-1">Full Syllabus covered</h5>
+                            </li>
+                            <li class="d-flex flex-row border-bottom py-3">
+                                <img src="./img/Group 36359.png" alt="" class="image-size">
+                                <h5>500+ Solved problems from Pathfinder & Irodov</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span class="back-co p-2">Access as per Lecture Schedule</span>
+                        <span class="back-co p-2">100% Doubt Clearance</span>
+                        <span class="back-co p-2">Video solutions for Homework Problems</span>
+                    </div>
+                    <div>
+                        <button class="but-co">VIEW COURSE</button>
+                    </div>
+                </div>
+
+            </div>
             <!-- <div class="swiper-slide filter1">filter1</div>
             <div class="swiper-slide filter1">filter1</div>
             <div class="swiper-slide filter1">filter1</div>
@@ -501,8 +534,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev swiper-button-prev-ct"></div>
-        <div class="swiper-button-next swiper-button-next-ct"></div> -->
+         <!-- <div class="swiper-button-prev swiper-button-prev-f-ct"></div>
+        <div class="swiper-button-next swiper-button-next-f-ct"></div> -->
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
@@ -720,6 +753,32 @@
             }
         }
     });
+
+    
+    new Swiper('.swiper-container-ct-cor', {
+        loop: true,
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 3.3,
+                spaceBetween: 40
+            },
+            1028: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            }
+        }
+    });
+
+
+
+
 });
 
         $(document).ready(function(){
